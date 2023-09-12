@@ -22,7 +22,7 @@ function App() {
               className={styles.buttonSendForm}
             >
               Criar
-              <PlusCircle />
+              <PlusCircle /> 
             </button>
         </form>
      </main>

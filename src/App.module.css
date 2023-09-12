@@ -7,6 +7,8 @@
     width: 100%;
     display: flex;
     margin-top: -1.6875rem;
+    gap: 0.25rem;
+
 }
 
 .formTask input[type=text] {
@@ -26,6 +28,12 @@
     padding: 1rem;
     color: var(--gray-100);
     font-size: 0.875rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
