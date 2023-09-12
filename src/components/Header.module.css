@@ -1,0 +1,10 @@
+header{
+    background: var(--gray-700);
+    display: flex;
+    justify-content: center;
+   
+}
+
+.logo{
+   margin: 5.125rem 0;
+}

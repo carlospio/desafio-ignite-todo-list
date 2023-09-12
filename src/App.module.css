@@ -1,16 +1,39 @@
-.wrapper{
-    max-width: 70rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
-
-   
+.container {
+    max-width: 62.375rem;
+    margin: 0 auto;
 }
 
-@media (max-width: 768px){
-    html{
+.formTask {
+    width: 100%;
+    display: flex;
+    margin-top: -1.6875rem;
+}
+
+.formTask input[type=text] {
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    background: var(--gray-500);
+    color: var(--gray-300);
+    font-size: 1rem;
+    padding: 1rem;
+    
+}
+
+.buttonSendForm {
+    border-radius: 8px;
+    background: var(--blue-dark);
+    padding: 1rem;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    html {
         font-size: 87.5%;
     }
-    .wrapper{
+
+    .wrapper {
         grid-template-columns: 1fr;
     }
 }
