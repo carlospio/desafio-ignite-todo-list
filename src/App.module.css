@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-.formTask {
+.formTasks {
     width: 100%;
     display: flex;
     margin-top: -1.6875rem;
@@ -11,7 +11,7 @@
 
 }
 
-.formTask input[type=text] {
+.formTasks input[type=text] {
     flex: 1;
     border-radius: 8px;
     border: 1px solid var(--gray-700);
@@ -19,6 +19,16 @@
     color: var(--gray-300);
     font-size: 1rem;
     padding: 1rem;
+    outline: 0;
+    
+}
+
+.formTasks input[type=text]:focus {
+   outline:  0;
+    border: 1px solid var(--purple-dark);
+   
+    color: var(--gray-100);
+ 
     
 }
 
@@ -34,6 +44,11 @@
     gap: 0.5rem;
     border: none;
     cursor: pointer;
+    transition: background 0.2s;
+}
+
+.buttonSendForm:hover {
+    background: var(--blue);
 }
 
 @media (max-width: 768px) {

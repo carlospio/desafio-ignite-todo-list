@@ -1,0 +1,7 @@
+.containerTasksList{
+    margin-top: 1.5rem; 
+    border-top: 1px solid var(--gray-400) ;
+    border-radius: 0.5rem;
+
+    padding: 4rem 1.5rem;
+}

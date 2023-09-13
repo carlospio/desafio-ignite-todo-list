@@ -1,4 +1,6 @@
 import {Header} from './components/Header'
+import {InfoTasks} from './components/InfoTasks'
+import {ContainerTasksList} from './components/ContainerTasksList'
 import { PlusCircle } from "@phosphor-icons/react";
 import styles from './App.module.css'
 import "./global.css";
@@ -10,7 +12,7 @@ function App() {
       <Header />
      <main className={styles.container}>
       <form
-          className={styles.formTask}
+          className={styles.formTasks}
           action=""
         >
             <input 
@@ -25,9 +27,17 @@ function App() {
               <PlusCircle /> 
             </button>
         </form>
+
+      <InfoTasks />
+
+      <ContainerTasksList />
+
+
+
      </main>
    </div>
   )
 }
 
 export default App
+
