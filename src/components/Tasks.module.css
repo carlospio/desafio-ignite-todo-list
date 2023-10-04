@@ -1,0 +1,89 @@
+.task {
+    background: var(--gray-500);    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: .75rem;
+
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+    
+    padding: 1rem;
+
+    transition: border-color .2s;
+}
+
+.task span {
+    flex: 1;
+
+    color: var(--gray-100);
+
+    font-size: var(--text-sm);
+}
+
+.task.checked {
+    background: var(--gray-500);  
+    border: 1px solid var(--gray-500);
+} 
+
+.task.checked span {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.task .deleteTask {
+    cursor: pointer;
+    margin: .25rem;
+}
+
+.task .deleteTask svg {
+    fill: var(--gray-300);
+    transition: fill .2s;
+}
+
+.task .deleteTask:hover svg {
+    fill: var(--danger);
+}
+
+
+.checkboxLabel {
+    min-width: 1.125rem;
+    min-height: 1.125rem;
+    
+    margin: .375rem;
+    padding: 0.125rem;
+
+    border-radius: 100%;
+    border: 2px solid var(--blue);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: border-color .2s, background-color .2s;
+}
+
+.checkboxLabel:hover {
+    background: rgba(var(--blue-rgb-value), .2);
+}
+
+.checkboxLabelChecked {
+    background: var(--purple-dark);
+    border-color: var(--purple-dark);
+}
+
+.checkboxLabelChecked:hover {
+    background: var(--purple);
+    border-color: var(--purple);
+}
+
+.checkboxLabel input[type="checkbox"] {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}

@@ -4,6 +4,14 @@
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+
+   
+        
+        border-top: 1px solid var(--gray-400) ;
+        border-radius: 0.5rem;
+    
+        padding: 4rem 1.5rem;
+    
 }
 
 .emptyTaskList p {
